@@ -57,19 +57,9 @@ const App = () => {
       className="cta-button connect-wallet-button"
       onClick={connectWallet}
     >
-      connect wallet
+      enter the candy machine
     </button>
     <img class="vending-machine" src={vendingMachine} alt="Vending Machine"/>
-    {/* <button className="cta-button solana-button">
-       <a href={SOLSCAN_LINK}
-            target="_blank"
-            rel="noreferrer">{`O`}</a>
-       </button>
-    <button className="cta-button buildspace-button">
-    <a href={BUILDSPACE_LINK}
-            target="_blank"
-            rel="noreferrer">{`O`}</a>
-    </button> */}
     </div>
   );
 
