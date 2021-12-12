@@ -32,7 +32,7 @@
   100% {opacity:1;}
 }
 
-.container {
+.container, .front-view {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -75,9 +75,9 @@
   height: 45px;
   border: 0;
   width: auto;
-  /* padding-left: 40px;
-  padding-right: 40px; */
-  /* border-radius: 10px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
   color: var(--clr-neon);
@@ -89,10 +89,13 @@
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
   top: 22%;
   left: 46%;
-  z-index: 6;
+  z-index: 6; 
 }
 
 .connect-wallet-button {
+  height: 45px;
+  border: 0;
+  width: auto;
   color: var(--clr-neon);
   background-size: 200% 200%;
   border-radius: 0.25em;
@@ -179,6 +182,11 @@
 .mint-button {
   background-size: 200% 200%;
   margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
 }
 
 .vending-machine {
@@ -209,7 +217,7 @@
   height: 73px;
   width: 300px;
   position: absolute;
-  top: 340px;
+  top: 410px;
   /* left: 40%; */
   transform: translateX(-46%);
 }
@@ -218,7 +226,7 @@
   height: 55px;
   width: 70px;
   position: absolute;
-  top: 710px;
+  top: 780px;
   /* left: 40%; */
   transform: translateX(-183%);
 }
@@ -227,7 +235,7 @@
   height: 55px;
   width: 70px;
   position: absolute;
-  top: 710px;
+  top: 780px;
   /* left: 40%; */
   transform: translateX(-37%);
 }
@@ -236,9 +244,39 @@
   height: 55px;
   width: 70px;
   position: absolute;
-  top: 710px;
+  top: 780px;
   /* left: 40%; */
   transform: translateX(112%);
+}
+
+.candy-button {
+  height: 55px;
+  width: 70px;
+  position: absolute;
+  top: 780px;
+  /* left: 40%; */
+  transform: translateX(1055%);
+  opacity: 0;
+  z-index: 6;
+}
+
+.minty-button {
+  height: 40px;
+  border: 0;
+  width: auto;
+  color: var(--clr-neon);
+  background-size: 200% 200%;
+  border-radius: 0.25em;
+  border: var(--clr-neon) 0.125em solid;
+  position: absolute;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  top: 700px;
+  left: 45%;
+  cursor: pointer;
+  z-index: 6;
+  bottom: 0;
+  opacity: 0.5;
 }
 
 .front-view-button img {
