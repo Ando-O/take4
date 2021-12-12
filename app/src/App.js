@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react';
-
-// remember to run 'npm install -S react-router-dom' in terminal and 'npm install react-router-dom --save'
-import { Link, NavLink } from 'react-router-dom';
-
 import './App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 import CandyMachine from './CandyMachine';
 import vendingMachine from './vendingmachine.png';
-
 //test
 import FrontView from './Front-view.js'
 
@@ -91,14 +86,7 @@ const App = () => {
         {!walletAddress && renderNotConnectedContainer()}
         {!walletAddress && renderHomepage()}
         </div>
-        {/* <img class="vending-machine" src={vendingMachine} alt="Vending Machine"/> */}
-        {/* Check for walletAddress and then pass in walletAddress */}
-        {/* {walletAddress && <CandyMachine walletAddress={window.solana} />} */}
-        {/* Below is how I got to Front-view.js */}
-
         {walletAddress && <FrontView />}
-
-
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo}/>
           <a

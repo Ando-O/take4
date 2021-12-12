@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import './Nft.css';
+import './App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 import CandyMachine from './CandyMachine';
 
-import nftGoddess from './nft_collection/crypto-goddess-1.png';
+import nftA from './nft_collection/vending-1.png';
+import nftB from './nft_collection/vending-2.png';
+import nftC from './nft_collection/crypto-goddess-1.png';
+import nftD from './nft_collection/crypto-goddess-2.png';
+import nftE from './nft_collection/gm-1.png';
+import nftF from './nft_collection/gm-2.png';
+import nftG from './nft_collection/bs_1.png';
+import nftH from './nft_collection/bs_2.png';
+import nftI from './nft_collection/rocket-1.png';
+import nftJ from './nft_collection/rocket-2.png';
+import nftK from './nft_collection/rocket-3.png';
 
-
-import { Link, NavLink } from 'react-router-dom';
 
 import vendingMachine from './vendingmachine.png';
 
@@ -32,7 +40,7 @@ const App = () => {
     }
 
     const mintyButton = () => (
-        <button class="minty-button" onClick={beepHandler}>enter the candy machine</button>
+        <button class="minty-button" onClick={beepHandler}>Mint</button>
     )
 
 
@@ -84,8 +92,20 @@ const App = () => {
 
   // render NFTs
   const nftCollectionRender = () => (
-    <div>
-        <img class="vending-machine" src={nftGoddess} alt="Crpto Goddess"/>
+    <div class="grid-container">
+        <div><img class="vending-machine" src={nftA} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftB} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftC} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftD} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftE} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftF} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftG} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftH} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftI} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftJ} alt="Crpto Goddess"/></div>
+        <div><img class="vending-machine" src={nftK} alt="Crpto Goddess"/></div>
+
+
     </div>
   )
 

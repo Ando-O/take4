@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import './App.css'
 import './Front-view.css';
-import './App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 import CandyMachine from './CandyMachine';
 
@@ -96,41 +96,38 @@ const App = () => {
     </div>
 
     <div class="candy-container front-view-button">
-    <a href="https://docs.metaplex.com/create-candy/introduction" target="_blank"
-          rel="noreferrer">
-          <button class="candy-btn"></button>
-          <img src={topButton} alt="top button"/>
-    </a>
-  </div>
+      <a href="https://docs.metaplex.com/create-candy/introduction" target="_blank"
+            rel="noreferrer">
+            <img src={topButton} alt="top button"/>
+      </a>
+    </div>
 
-  <div class="solana-container front-view-button">
-    <a href="https://solscan.io/" target="_blank"
-          rel="noreferrer">
-            <button class="solana-btn"></button>
-        <img src={solanaButton} onClick={connectWallet} alt="solana button"/>
-    </a>
-  </div>
+    <div class="solana-container front-view-button">
+      <a href="https://solscan.io/" target="_blank"
+            rel="noreferrer">
+          <img src={solanaButton} alt="solana button"/>
+      </a>
+    </div>
 
-  <div class="buildspace-container front-view-button">
-    <a href="https://buildspace.so/" target="_blank"
-          rel="noreferrer">
-        <button class="candy-btn"></button>
-        <img src={buildspaceButton} alt="buildspace button"/>
-    </a>
-  </div>
+    <div class="buildspace-container front-view-button">
+      <a href="https://buildspace.so/" target="_blank"
+            rel="noreferrer">
+          <img src={buildspaceButton} alt="buildspace button"/>
+      </a>
+    </div>
 
-  <div class="number-container front-view-button">
-    
-        <img src={numberButton} onClick={candyButton()} alt="number button"/>
-        <button class="number-btn"></button>
-  </div>
+    <div class="number-container front-view-button">
+      <a href="https://docs.metaplex.com/create-candy/introduction">
+          <img src={numberButton} alt="number button"/>
+      </a>
+    </div>
     </div>
   )
 
     const candyButton = () => (
-        <button class="front-view-button candy-button" onClick={boopHandler}>🍭🍭🍭🍭</button>
-    )
-    
+        <button onClick={boopHandler}></button>
+    ) 
+
   return (
     <div id="front-view" className="App">
       <div className="container">
