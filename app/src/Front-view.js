@@ -12,7 +12,7 @@ import numberButton from './assets/number-btn_2.png';
 
 import { Link, NavLink } from 'react-router-dom';
 
-import NFTPage from './Nft.js'
+import NFTPage from './nftView/Nft.js'
 
 
 // Constants
